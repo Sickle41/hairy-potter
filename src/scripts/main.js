@@ -12,11 +12,11 @@ let saucer = makePottery("Saucer", 3, 1)
 
 
 // Fire each piece of pottery in the kiln
-let firedMug = firePottery(mug, 2000)
-let firedPlate = firePottery(plate, 2100)
-let firedBowl = firePottery(bowl, 2500)
-let firedCup = firePottery(cup, 2200)
-let firedSaucer = firePottery(saucer, 2000)
+let firedMug = firePottery(mug, 2000);
+let firedPlate = firePottery(plate, 2100);
+let firedBowl = firePottery(bowl, 2500);
+let firedCup = firePottery(cup, 2200);
+let firedSaucer = firePottery(saucer, 2000);
 
 // Determine which ones should be sold, and their price
 
@@ -24,4 +24,4 @@ let firedSaucer = firePottery(saucer, 2000)
 // Invoke the component function that renders the HTML list
 
 
-console.log(plate)
+console.log(firedBowl)

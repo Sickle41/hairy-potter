@@ -1,6 +1,9 @@
 const firePottery = (pottery, firingTemperature) => {
     pottery.fired = true;
-    pottery.cracked = firingTemperature > 2200;
+    pottery.cracked = false
+    if (firingTemperature > 2200) {
+        pottery.cracked = true;
+    };
 
     return pottery
 }
