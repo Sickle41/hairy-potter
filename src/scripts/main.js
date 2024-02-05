@@ -4,7 +4,8 @@ const { makePottery } = require("./PotteryWheel.js")
 
 
 // Make 5 pieces of pottery at the wheel
-let mug = makePottery()
+let mug = makePottery("Mug", 2, 8)
+console.log(mug)
 
 
 // Fire each piece of pottery in the kiln
