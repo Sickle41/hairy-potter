@@ -1,4 +1,5 @@
 // Imports go first
+const { makePottery } = require("./PotteryWheel.js")
 
 
 
