@@ -5,6 +5,11 @@ const { makePottery } = require("./PotteryWheel.js")
 
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery()
+let plate = makePottery()
+let bowl = makePottery()
+let cup = makePottery()
+let saucer = makePottery()
+
 
 console.log(mug)
 
