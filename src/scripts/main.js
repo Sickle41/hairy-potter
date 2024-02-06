@@ -24,4 +24,4 @@ let firedSaucer = firePottery(saucer, 2000)
 // Invoke the component function that renders the HTML list
 
 
-console.log(plate)
+console.log(firedBowl)
