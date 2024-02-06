@@ -1,6 +1,6 @@
 const potteryCatalog = []
 
-    const toSellOrNotToSell = (pottery) => {
+    export const toSellOrNotToSell = (pottery) => {
         if (pottery.cracked) {
             return pottery
         }
@@ -20,13 +20,13 @@ const potteryCatalog = []
     }
         
     
-    const usePottery = () => {
+    export const usePottery = () => {
         return potteryCatalog.map(pottery =>({...pottery}))
         
     }
     
     
-    module.exports = {toSellOrNotToSell, usePottery}
+    
 
 
 
