@@ -1,8 +1,8 @@
 // Imports go first
-const { makePottery } = require("./PotteryWheel.js")
-const { firePottery } = require("./Kiln.js")
-const { toSellOrNotToSell, usePottery } = require("./PotteryCatalog.js")
-const { PotteryList } = require("./PotteryList.js")
+import { makePottery } from "./PotteryWheel.js"
+import { firePottery } from "./Kiln.js"
+import { potteryList } from "./PotteryList.js"
+import { toSellOrNotToSell } from "./PotteryCatalog.js"
 
 
 // Make 5 pieces of pottery at the wheel
@@ -21,22 +21,19 @@ let firedCup = firePottery(cup, 2200);
 let firedSaucer = firePottery(saucer, 2000);
 
 // Determine which ones should be sold, and their price
+toSellOrNotToSell(firedMug)
+toSellOrNotToSell(firedPlate)
+toSellOrNotToSell(firedBowl)
+toSellOrNotToSell(firedCup)
+toSellOrNotToSell(firedSaucer)
 
-toSellOrNotToSell(firedMug);
-toSellOrNotToSell(firedPlate);
-toSellOrNotToSell(firedBowl);
-toSellOrNotToSell(firedCup);
-toSellOrNotToSell(firedSaucer);
 
-const potteryToSell = usePottery();
-
-console.log(potteryToSell)
+const parentHTMLElement = document.querySelector(".Pottery_Container")
 
 // Invoke the component function that renders the HTML list
 
-const potteryListElement = document.querySelector('.potteryList');
+parentHTMLElement.innerHTML = potteryList()
 
-potteryListElement.innerHTML = PotteryList();
 
 
 
