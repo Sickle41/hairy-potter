@@ -2,6 +2,7 @@
 const { makePottery } = require("./PotteryWheel.js")
 const { firePottery } = require("./Kiln.js")
 const { toSellOrNotToSell, usePottery } = require("./PotteryCatalog.js")
+const { PotteryList } = require("./PotteryList.js")
 
 
 // Make 5 pieces of pottery at the wheel
@@ -21,15 +22,21 @@ let firedSaucer = firePottery(saucer, 2000);
 
 // Determine which ones should be sold, and their price
 
+toSellOrNotToSell(firedMug);
+toSellOrNotToSell(firedPlate);
+toSellOrNotToSell(firedBowl);
+toSellOrNotToSell(firedCup);
+toSellOrNotToSell(firedSaucer);
+
+const potteryToSell = usePottery();
+
+console.log(potteryToSell)
 
 // Invoke the component function that renders the HTML list
 
+const potteryListElement = document.querySelector('.potteryList');
 
-
-
-toSellOrNotToSell(firedMug)
-
-console.log(usePottery(firedMug))
+potteryListElement.innerHTML = PotteryList();
 
 
 
