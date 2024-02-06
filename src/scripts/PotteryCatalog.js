@@ -1,0 +1,3 @@
+const potteryCatalog = []
+
+const toSellOrNotToSell = 
