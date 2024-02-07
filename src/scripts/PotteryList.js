@@ -1,14 +1,14 @@
 import { usePottery } from "./PotteryCatalog.js"
 
 
-export const potteryList = () =>{
+export const PotteryList = () =>{
     
-    let htmlString = `<article class ="PotteryList">`
+    let htmlString = ""
     let listOfPottery = usePottery()
     
     for (const piece of listOfPottery) {
 
-        htmlString += `<section class="pottery" id="pottery--1">
+        htmlString += `<section class="pottery" id="pottery--${piece.id}">
             <h2 class="pottery__shape">${piece.shape}</h2>
 
             <div class="pottery__properties">
@@ -19,7 +19,7 @@ export const potteryList = () =>{
 
             </section>`
     }
-    htmlString += `</arcticle>`
+    
 
     return htmlString
 }

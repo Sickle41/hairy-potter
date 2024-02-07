@@ -1,7 +1,7 @@
 // Imports go first
 import { makePottery } from "./PotteryWheel.js"
 import { firePottery } from "./Kiln.js"
-import { potteryList } from "./PotteryList.js"
+import { PotteryList } from "./PotteryList.js"
 import { toSellOrNotToSell } from "./PotteryCatalog.js"
 
 
@@ -32,7 +32,7 @@ const parentHTMLElement = document.querySelector(".Pottery_Container")
 
 // Invoke the component function that renders the HTML list
 
-parentHTMLElement.innerHTML = potteryList()
+parentHTMLElement.innerHTML = PotteryList()
 
 
 
